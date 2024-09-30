@@ -10,6 +10,23 @@ p, span {
 	color: #999999;
 }
 
+.button-style {
+	border-radius: 30px;
+	padding: 5px 10px;
+	font-size: 16px;
+	width: 200px;
+	height: 45px;
+	background-color: #548ce8;
+	color: #fff;
+	border: 1px solid #548ce8;
+}
+
+.button-style:hover {
+	background:#446eb3;
+	border: 1px solid #446eb3;
+	cursor: pointer;
+}
+
 .header {
 	background-image: url("img/photo_1.jpg");
 	background-size: 100% auto;
@@ -58,23 +75,7 @@ div h1 {
 	margin-bottom: 15px;
 	font-size: 16px;
 }
-.our-project {
-	box-sizing: border-box;
-	border-radius: 30px;
-	padding: 5px 10px;
-	font-size: 14px;
-	width: 200px;
-	height: 45px;
-	background-color: #548ce8;
-	color: #fff;
-	border: 1px solid #548ce8;
-}
 
-.our-project:hover {
-	background:#446eb3;
-	border: 1px solid #446eb3;
-	cursor: pointer;
-}
 /*----------------------------------------*/
 
 #services {
@@ -131,22 +132,6 @@ div h1 {
 	margin-top: 50px;
 }
 
-.all-services-button button {
-	border-radius: 30px;
-	padding: 5px 10px;
-	font-size: 14px;
-	width: 200px;
-	height: 45px;
-	background-color: #548ce8;
-	color: #fff;
-	border: 1px solid #548ce8;
-}
-
-.all-services-button button:hover {
-	background:#446eb3;
-	border: 1px solid #446eb3;
-	cursor: pointer;
-}
 /* --------------------------------- */
 
 #about-us {
@@ -238,11 +223,12 @@ div h1 {
 	padding-top: 100px;
 	background-image: linear-gradient(30deg, #504DC2, #5F12D0);
 	background-repeat: no-repeat;
-	background-size: 100% 65%;
+	background-size: 100% 55%;
 }
 
 #all-services div.container {
 	width: 1140px;
+	border-bottom: 1px solid #e0e0e0;
 }
 
 #all-services-text {
@@ -260,23 +246,6 @@ div h1 {
 	align-items: center;
 	justify-content: flex-end;
 	
-}
-
-.all-services-button-2 button {
-	border-radius: 30px;
-	padding: 5px 10px;
-	font-size: 14px;
-	width: 200px;
-	height: 45px;
-	background-color: #548ce8;
-	color: #fff;
-	border: 1px solid #548ce8;
-}
-
-.all-services-button-2 button:hover {
-	background:#446eb3;
-	border: 1px solid #446eb3;
-	cursor: pointer;
 }
 
 .all-services-item-img {
@@ -298,4 +267,49 @@ div h1 {
 .all-services-item-text {
 	margin-right: 10px;
 	margin-bottom: 10px;
+}
+
+#all-services-item-a {
+	padding-bottom: 70px;
+}
+/* ----------------------------- */
+
+#all-projects {
+	margin-top: 70px;
+	background-color: #F6F6F8;
+	padding-top: 100px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#all-projects div.container {
+	width: 1140px;
+}
+
+.all-projects-h2 {
+	margin-bottom: 20px;
+}
+
+.all-projects-h2 h2 {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.all-projects-p {
+	text-align: center;
+	height: 40px;
+	width: 730px;
+	margin-bottom: 50px;
+}
+
+.all-projects-p p {
+	font-size: 16px;
+	color: #999999;
+}
+
+.all-projects-button {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
 }
