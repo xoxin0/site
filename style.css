@@ -43,6 +43,7 @@ nav {
 
 nav ul {
 	margin-right: 200px;
+	margin-bottom: 0;
 }
 
 nav li {
@@ -53,6 +54,16 @@ nav li {
 	font-size: 15px;
 	font-family: "Montserrat", Arial, sans-serif;
 
+}
+
+.nav-header a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+
+.nav-header a:hover {
+	color: #e0e0e0;
 }
 
 .central-header {
@@ -378,6 +389,7 @@ div h1 {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 600;
+	text-decoration: none;
 }
 /* ------------------------------ */
 
