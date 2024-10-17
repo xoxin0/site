@@ -90,22 +90,22 @@ p, span {
   flex-direction: column;
   margin-top: 10%;
 }
-#services .div-services-h2 {
+#services .services-h2-container {
   display: flex;
   justify-content: center;
 }
-#services .div-services-h2 .services-h2 {
+#services .services-h2-container .services-h2 {
   text-align: center;
   margin-bottom: 40px;
   font-size: clamp(1rem, 0.551rem + 1.94vw, 2.25rem);
   font-weight: bold;
   width: 80%;
 }
-#services .div-services-p {
+#services .services-p-container {
   display: flex;
   justify-content: center;
 }
-#services .div-services-p .services-p {
+#services .services-p-container .services-p {
   text-align: center;
   width: 85%;
   max-height: 40px;
@@ -116,11 +116,15 @@ p, span {
   margin-top: 5%;
   justify-content: center;
 }
-#services .services-item .services-item-img {
+#services .services-item .services-item-img-container {
   align-self: center;
   justify-content: flex-end;
-  width: 120px;
   margin-right: 1vw;
+  width: 120px;
+}
+#services .services-item .services-item-img-container .services-item-img {
+  width: 110px;
+  height: 110px;
 }
 #services .services-item .services-item-text-col {
   width: 200px;
@@ -193,6 +197,11 @@ p, span {
 #about-us-numbers .about-us-numbers .about-us-numbers-img {
   align-self: center;
 }
+#about-us-numbers .about-us-numbers .about-us-numbers-row-two .about-us-numbers-text {
+  display: flex !important;
+  justify-content: center !important;
+  font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem) !important;
+}
 
 #all-services {
   padding-top: 10vh;
@@ -216,7 +225,7 @@ p, span {
   align-items: center;
   justify-content: flex-end;
 }
-#all-services .all-services-item-img {
+#all-services .all-services-item-img-container {
   margin-bottom: 30px;
   display: flex;
   justify-content: flex-start;
@@ -259,7 +268,7 @@ p, span {
   margin-bottom: 50px;
   font-size: clamp(0.875rem, 0.838rem + 0.19vw, 1rem);
 }
-#all-projects .all-projects-img {
+#all-projects .all-projects-imgs {
   width: 1140px;
 }
 #all-projects .all-projects-button {
@@ -398,16 +407,16 @@ p, span {
 }
 
 @media (min-width: 1400px) {
-  #services .services-item .services-item-img:not(:first-child) {
+  #services .services-item .services-item-img-container:not(:first-child) {
     margin-left: 50px;
   }
 }
 @media (min-width: 1200px) {
-  #footer-container div.footer-row-last {
-    margin-left: 0;
+  #footer-container .footer-row-last {
+    margin-left: 0 !important;
   }
-  #footer-container div.footer-row:nth-child(2) {
-    margin-left: 0;
+  #footer-container .footer-row:nth-child(2) {
+    margin-left: 0 !important;
   }
 }
 @media (max-width: 1200px) {
@@ -425,9 +434,9 @@ p, span {
     display: flex;
     justify-content: center;
   }
-  #all-services .all-services-item-img img {
-    width: 290px;
-    height: 250px;
+  #all-services .all-services-item-img {
+    width: 290px !important;
+    height: 250px !important;
   }
   #all-services .all-services-text {
     width: 100%;
@@ -456,7 +465,21 @@ p, span {
     margin-top: 5%;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 992px) {
+  #all-services .all-services-item-img-container:nth-child(2) {
+    justify-content: flex-start !important;
+  }
+  #all-services .all-services-item-text01:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  #all-services .all-services-item-text01:nth-child(2) .all-services-item-a {
+    align-self: flex-start;
+    padding: 0 !important;
+  }
+}
+@media (max-width: 991px) {
   #video {
     background-size: 100% 60%;
   }
@@ -469,7 +492,7 @@ p, span {
   .all-header .navbar {
     display: none;
   }
-  #all-services .all-services-item-img:nth-child(2) {
+  #all-services .all-services-item-img-container:nth-child(2) {
     justify-content: flex-end;
   }
   #all-services .all-services-item-text01:nth-child(2) {
@@ -514,7 +537,7 @@ p, span {
     text-align: center;
     width: 100%;
   }
-  #all-services .all-services-item-img {
+  #all-services .all-services-item-img-container {
     justify-content: center;
     width: 100%;
     margin-bottom: 15%;
@@ -550,9 +573,9 @@ p, span {
     width: 200px;
     height: 160px;
   }
-  .services-item-img img {
-    width: 80px;
-    height: 80px;
+  .services-item-img {
+    width: 80px !important;
+    height: 80px !important;
   }
   #about-us-numbers .about-us-numbers-img {
     width: 20px;
@@ -579,12 +602,12 @@ p, span {
     justify-content: center;
     margin: 0;
   }
-  #all-services .all-services .all-services-item-row-img .all-services-item-img:last-child {
+  #all-services .all-services .all-services-item-row-img .all-services-item-img-container:last-child {
     margin-bottom: 0;
   }
-  #all-services .all-services .all-services-item-row-img img {
-    width: 190px;
-    height: 150px;
+  #all-services .all-services .all-services-item-row-img .all-services-item-img {
+    width: 190px !important;
+    height: 150px !important;
   }
   #all-services .all-services .all-services-item-text01:first-child {
     margin-top: 10%;
@@ -593,10 +616,10 @@ p, span {
     width: 80%;
     margin-bottom: 20%;
   }
-  #all-projects .all-projects-img {
+  #all-projects .all-projects-imgs {
     width: 100%;
   }
-  #all-projects .all-projects-img .all-projects-img-col img {
+  #all-projects .all-projects-imgs .all-projects-img-col .all-projects-img {
     width: 150px;
     height: 150px;
   }
