@@ -193,10 +193,6 @@ p, span {
 #about-us-numbers .about-us-numbers .about-us-numbers-img {
   align-self: center;
 }
-#about-us-numbers .about-us-numbers .about-us-numbers-row-two div.col.about-us-numbers-text {
-  display: flex;
-  justify-content: center;
-}
 
 #all-services {
   padding-top: 10vh;
